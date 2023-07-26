@@ -15,7 +15,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'bg-common' : '#F85559',
               }
             }
           }
@@ -29,11 +29,107 @@
 
 </head>
 <body class="font-lato">
-    <header>
-        
+    <header class="container mx-auto">
+        <!-- nav section -->
+       <div class="bg-bg-common mt-20 grid gap-4 md:grid-cols-3 lg:grid-cols-3 rounded-3xl px-8">
+        <div class="flex">
+            <ul class="flex flex-row gap-6 items-center text-white  ">
+                <li><a href="">Home </a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-5">
+            <img src="./images/logo.png" alt="">
+            <h2 class="text-white text-xl font-extrabold">Fruit Burst</h2>
+        </div>
+        <div class="bg-white w-60 rounded-3xl h-10 flex m-auto items-center justify-around">
+           <p class="pl-6"><small>Search Here</small></p>
+           <i class="fa-solid fa-magnifying-glass "></i>  
+        </div>
+       </div>
+       <!-- nav end -->
+
+       <!-- banner section -->
+       <div class="carousel w-full mt-10 z-10">
+        <div id="slide1" class="carousel-item relative w-full z-10  ">
+          <img src="./images/banner1.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <div class="text-center text-white -mt-20">
+                <h1 class="text-4xl font-extrabold mb-5">Exotic tastes at your <br> doorstep </h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-bg-common text-white">Shop Now</button>
+            </div>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full z-10  ">
+          <img src="./images/banner2.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <div class="text-center text-white -mt-20">
+                <h1 class="text-4xl font-extrabold mb-5">Exotic tastes at your <br> doorstep </h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-bg-common text-white">Shop Now</button>
+            </div>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full z-10  ">
+          <img src="./images/banner3.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <div class="text-center text-white -mt-20">
+                <h1 class="text-4xl font-extrabold mb-5">Exotic tastes at your <br> doorstep </h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-bg-common text-white">Shop Now</button>
+            </div>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full z-10  ">
+          <img src="./images/banner4.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <div class="text-center text-white -mt-20">
+                <h1 class="text-4xl font-extrabold mb-5">Exotic tastes at your <br> doorstep </h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-bg-common text-white">Shop Now</button>
+            </div> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+        bonus part 
+       -->
+       <div class="absolute flex md:flex-row text-center items-center justify-around rounded-lg z-20 -mt-20 w-8/12 mx-20  bg-white">
+           
+           <div class=" rounded-l-lg">
+               <img src="./images/fruit1.png"  alt="">
+               <p>Grapes</p>
+           </div>
+           <div class="">
+               <img src="./images/fruit2.png" alt="">
+               <p>Orange</p>
+           </div>
+           <div class="">
+               <img src="./images/fruit3.png" alt="">
+               <p>Mango</p>
+           </div>
+           <div class="">
+               <img src="./images/fruit4.png" alt="">
+               <p>Strawberry</p>
+           </div>
+           <div class=""rounded-r-lg">
+               <img src="./images/fruit5.png" alt="">
+               <p>Pomegranate</p>
+           </div>
+       </div>
     </header>
-    <main>
-        
+    <main class="container mx-auto">
     </main>
     <footer>
 
