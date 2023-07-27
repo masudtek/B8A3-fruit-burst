@@ -136,10 +136,11 @@
     <main class="container mx-auto my-24">
         <!-- deal of the day section -->
         <section>
+            <!-- deals content -->
             <div class="flex flex-col md:flex-row lg:flex-row justify-between">
-                <div class="flex-1 text-left mb-10 w-6/12">
+                <div class="flex-1 text-center md:text-left mb-10 w-6/12">
                     <h2 class="text-2xl font-extrabold mb-5">Deal of the day</h2>
-                    <p class="text-sm md:w-3/4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
+                    <p class="text-sm text-center md:text-left md:w-3/4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max  ">
@@ -170,7 +171,11 @@
                       </div>
                 </div>
             </div>
+            <!-- all fruits deal -->
             <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4 mb-12">
+
+                <!-- Apple -->
+
                 <div class="card  bg-base-100 shadow-xl text-center">
                     <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -183,9 +188,40 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" />
                       </div>
-                      <button class="text-[#F85559]">Details</button>
+
+                      <!-- Open the modal using ID.showModal() method -->
+                      <button class=" text-[#F85559]" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal rounded-lg">
+                            <form method="dialog" class="modal-box">
+                                <div class="card  bg-base-100 shadow-xl text-center">
+                                    <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                                    <div class="card-body">
+                                    <p class="font-bold ">12.90$-18.85$</p>
+                                    <p class="text-sm">Apple</p>
+                                    <div class="rating justify-center">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-bg-common" />
+                                      </div>
+                                      </div>
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <div class="gap-8 flex justify-center">
+                                            <button class="btn capitalize ">Close</button>
+                                            <button class="btn capitalize bg-bg-common text-white mb-12 ">Buy Now</button>
+                                        </div>
+                                    
+                                </div>
+                            </form>
+                        </dialog>
+
+            
                     </div>
                 </div>
+
+                <!-- Orange -->
+
                 <div class="card  bg-base-100 shadow-xl text-center">
                     <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -201,6 +237,9 @@
                       <button class="text-[#F85559]">Details</button>
                     </div>
                 </div>
+
+                <!-- Red Dragon -->
+
                 <div class="card  bg-base-100 shadow-xl text-center">
                     <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -216,6 +255,9 @@
                       <button class="text-[#F85559]">Details</button>
                     </div>
                 </div>
+
+                <!-- Banana -->
+
                 <div class="card  bg-base-100 shadow-xl text-center">
                     <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
                     <div class="card-body">
@@ -231,7 +273,10 @@
                       <button class="text-[#F85559]">Details</button>
                     </div>
                 </div>
+
             </div>
+
+            <!-- finish Deal -->
             <div class=" flex justify-center">
                 <button class="btn bg-bg-common text-white capitalize rounded-md ">Show All</button>
             </div>
